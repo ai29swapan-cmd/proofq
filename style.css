@@ -1,1 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
+body{
+    background:#f4f7fb;
+    color:#222;
+}
+
+.topbar{
+    background:#1e3a8a;
+    color:white;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo h1{
+    font-size:32px;
+}
+
+.logo span{
+    font-size:14px;
+    opacity:.85;
+}
+
+.top-icons button{
+    background:white;
+    border:none;
+    border-radius:50%;
+    width:42px;
+    height:42px;
+    margin-left:10px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.navbar{
+    background:white;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#1e3a8a;
+    font-weight:600;
+}
+
+.cards{
+    width:95%;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:#666;
+    margin-bottom:15px;
+}
+
+.card h1{
+    color:#2563eb;
+    font-size:38px;
+}
+
+.charts{
+    width:95%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.chart-box{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    min-height:350px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.table-section{
+    width:95%;
+    margin:30px auto;
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#2563eb;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:12px;
+    border-bottom:1px solid #eee;
+    text-align:center;
+}
+
+footer{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+@media(max-width:900px){
+
+.charts{
+grid-template-columns:1fr;
+}
+
+.topbar{
+flex-direction:column;
+gap:15px;
+}
+
+}
