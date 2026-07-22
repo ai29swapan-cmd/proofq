@@ -1,13 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROOFQ</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PROOFQ Enterprise</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
-<body style="font-family:Arial;text-align:center;padding-top:100px;background:#f5f7fa;">
-    <h1>🚀 Welcome to PROOFQ</h1>
-    <h2>Smart Proof Management & Analytics</h2>
-    <p>Your dashboard is under development.</p>
+
+<body>
+
+<header class="topbar">
+
+<div class="logo">
+
+<h1>PROOFQ</h1>
+
+<span>Smart Proof Management & Analytics</span>
+
+</div>
+
+<div class="top-icons">
+
+<button>🔔</button>
+
+<button>🌙</button>
+
+<button>👤</button>
+
+</div>
+
+</header>
+
+<nav class="navbar">
+
+<a href="#">Dashboard</a>
+
+<a href="#">Analytics</a>
+
+<a href="#">Reports</a>
+
+<a href="#">Search</a>
+
+<a href="#">Settings</a>
+
+</nav>
+
+<section class="cards">
+
+<div class="card">
+<h3>Total Jobs</h3>
+<h1 id="jobs">0</h1>
+</div>
+
+<div class="card">
+<h3>Total Prints</h3>
+<h1 id="prints">0</h1>
+</div>
+
+<div class="card">
+<h3>Total Cost</h3>
+<h1 id="cost">₹0</h1>
+</div>
+
+<div class="card">
+<h3>Profiles</h3>
+<h1 id="profiles">0</h1>
+</div>
+
+<div class="card">
+<h3>Engineers</h3>
+<h1 id="engineers">0</h1>
+</div>
+
+<div class="card">
+<h3>Today's Jobs</h3>
+<h1 id="today">0</h1>
+</div>
+
+</section>
+
+<section class="charts">
+
+<div class="chart-box">
+
+<h2>Monthly Trend</h2>
+
+<canvas id="chart1"></canvas>
+
+</div>
+
+<div class="chart-box">
+
+<h2>Profile Distribution</h2>
+
+<canvas id="chart2"></canvas>
+
+</div>
+
+</section>
+
+<section class="table-section">
+
+<h2>Recent Records</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Date</th>
+
+<th>Profile</th>
+
+<th>Requestor</th>
+
+<th>Engineer</th>
+
+<th>Prints</th>
+
+<th>Cost</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tableData">
+
+<tr>
+
+<td colspan="6">
+
+No Data
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<footer>
+
+PROOFQ Enterprise v1.0
+
+<br>
+
+Powered by Google Sheets • GitHub Pages • Google Apps Script
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
